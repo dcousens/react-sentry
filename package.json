@@ -31,5 +31,10 @@
     "babel": "*",
     "mocha": "*",
     "standard": "*"
+  },
+  "standard": {
+    "ignore": [
+      "lib/"
+    ]
   }
 }

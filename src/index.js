@@ -10,7 +10,7 @@ module.exports = function () {
       })
     },
 
-    on (emitter, eventName, callback) {
+    watch (emitter, eventName, callback) {
       listeners.push({
         emitter: emitter,
         eventName: eventName,
@@ -20,7 +20,7 @@ module.exports = function () {
       emitter.on(eventName, callback)
     },
 
-    removeListener (emitter, eventName, callback) {
+    unwatch (emitter, eventName, callback) {
       listeners = listeners.filter((listener) => {
         return listener.emitter === emitter &&
                listener.eventName === eventName &&

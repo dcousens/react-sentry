@@ -1,7 +1,7 @@
-# PROJECTNAME
+# react-forget
 
-[![TRAVIS](https://secure.travis-ci.org/dcousens/PROJECTNAME.png)](http://travis-ci.org/dcousens/PROJECTNAME)
-[![NPM](http://img.shields.io/npm/v/PROJECTNAME.svg)](https://www.npmjs.org/package/PROJECTNAME)
+[![TRAVIS](https://secure.travis-ci.org/dcousens/react-forget.png)](http://travis-ci.org/dcousens/react-forget)
+[![NPM](http://img.shields.io/npm/v/react-forget.svg)](https://www.npmjs.org/package/react-forget)
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 

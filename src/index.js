@@ -26,6 +26,8 @@ module.exports = function () {
                listener.eventName === eventName &&
                listener.callback === callback
       })
+
+      emitter.removeListener(eventName, callback)
     }
   }
 }

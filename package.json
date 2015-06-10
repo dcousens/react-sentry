@@ -1,0 +1,35 @@
+{
+  "name": "react-forget",
+  "version": "0.0.1",
+  "description": "react-forget",
+  "main": "lib/index.js",
+  "files": [
+    "index.js",
+    "lib/"
+  ],
+  "scripts": {
+    "build": "babel -d lib/ src/",
+    "prepublish": "npm run build",
+    "standard": "standard",
+    "test": "npm run standard && npm run unit",
+    "unit": "mocha --compilers js:babel/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dcousens/react-forget.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dcousens/react-forget/issues"
+  },
+  "homepage": "https://github.com/dcousens/react-forget",
+  "keywords": [
+    "react-forget"
+  ],
+  "author": "Daniel Cousens",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "*",
+    "mocha": "*",
+    "standard": "*"
+  }
+}

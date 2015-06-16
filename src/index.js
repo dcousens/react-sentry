@@ -6,7 +6,8 @@ module.exports = function () {
       listeners.forEach(function (listener) {
         var { emitter, eventName, callback } = listener
 
-        emitter.removeListener(eventName, callback)
+        var removeListener = emitter.addListener || emitter.addEventListener
+        removeListener.apply(emitter, eventName, callback)
       })
     },
 
@@ -17,7 +18,8 @@ module.exports = function () {
         callback: callback
       })
 
-      emitter.on(eventName, callback)
+      var addListener = emitter.addListener || emitter.addEventListener
+      addListener.apply(emitter, eventName, callback)
     },
 
     unwatch (emitter, eventName, callback) {
@@ -27,7 +29,8 @@ module.exports = function () {
                listener.callback === callback
       })
 
-      emitter.removeListener(eventName, callback)
+      var removeListener = emitter.addListener || emitter.addEventListener
+      removeListener.apply(emitter, eventName, callback)
     }
   }
 }

@@ -6,7 +6,7 @@ module.exports = function () {
       listeners.forEach(function (listener) {
         var { emitter, eventName, callback } = listener
 
-        var removeListener = emitter.addListener || emitter.addEventListener
+        var removeListener = emitter.removeListener || emitter.removeEventListener
         removeListener.call(emitter, eventName, callback)
       })
     },
@@ -29,7 +29,7 @@ module.exports = function () {
                listener.callback === callback
       })
 
-      var removeListener = emitter.addListener || emitter.addEventListener
+      var removeListener = emitter.removeListener || emitter.removeEventListener
       removeListener.call(emitter, eventName, callback)
     }
   }

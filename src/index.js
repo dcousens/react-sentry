@@ -7,7 +7,7 @@ module.exports = function () {
         var { emitter, eventName, callback } = listener
 
         var removeListener = emitter.addListener || emitter.addEventListener
-        removeListener.apply(emitter, eventName, callback)
+        removeListener.call(emitter, eventName, callback)
       })
     },
 
@@ -19,7 +19,7 @@ module.exports = function () {
       })
 
       var addListener = emitter.addListener || emitter.addEventListener
-      addListener.apply(emitter, eventName, callback)
+      addListener.call(emitter, eventName, callback)
     },
 
     unwatch (emitter, eventName, callback) {
@@ -30,7 +30,7 @@ module.exports = function () {
       })
 
       var removeListener = emitter.addListener || emitter.addEventListener
-      removeListener.apply(emitter, eventName, callback)
+      removeListener.call(emitter, eventName, callback)
     }
   }
 }

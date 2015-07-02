@@ -16,7 +16,7 @@ getInitialState () {
 },
 
 componentDidMount () {
-	this.watch(this.context.myStore, 'online', (online) {
+	this.watch(this.context.myStore, 'online', (online) => {
 		this.setState({ online })
 	})
 },

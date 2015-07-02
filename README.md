@@ -9,6 +9,19 @@
 ## Example
 
 ``` javascript
+// ...
+
+getInitialState () {
+	return { online: this.context.myStore.isOnline() }
+},
+
+componentDidMount () {
+	this.watch(this.context.myStore, 'online', (online) {
+		this.setState({ online })
+	})
+},
+
+// ...
 ```
 
 

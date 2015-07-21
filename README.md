@@ -5,7 +5,7 @@
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
-Just a bike shed.
+Listen to `EventEmitters` safely with automatic cleanup onComponentWillUnmount.
 
 
 ## Example

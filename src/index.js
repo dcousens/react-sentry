@@ -4,7 +4,7 @@ module.exports = {
   },
 
   componentWillUnmount () {
-    this.__rs_listeners.forEach(function (listener) {
+    this.__rs_listeners.forEach(listener => {
       var { emitter, eventName, callback } = listener
 
       var removeListener = emitter.removeListener || emitter.removeEventListener
@@ -24,7 +24,7 @@ module.exports = {
   },
 
   unwatch (emitter, eventName, callback) {
-    this.__rs_listeners = this.__rs_listeners.filter((listener) => {
+    this.__rs_listeners = this.__rs_listeners.filter(listener => {
       return listener.emitter === emitter &&
               listener.eventName === eventName &&
               listener.callback === callback

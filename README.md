@@ -9,6 +9,10 @@
 ## Example
 
 ``` javascript
+var Sentry = require('react-sentry')
+// ...
+
+mixins: [Sentry],
 // ...
 
 getInitialState () {

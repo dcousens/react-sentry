@@ -11,6 +11,10 @@ Listen to `EventEmitters` safely with automatic cleanup `onComponentWillUnmount`
 ## Example
 
 ``` javascript
+var Sentry = require('react-sentry')
+// ...
+
+mixins: [Sentry],
 // ...
 
 getInitialState () {

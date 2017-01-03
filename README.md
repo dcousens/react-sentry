@@ -30,7 +30,4 @@ componentDidMount () {
 // ...
 ```
 
-
-## License
-
-This library is free and open-source software released under the MIT license.
+## LICENSE [MIT](LICENSE)
